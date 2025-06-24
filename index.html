@@ -53,14 +53,24 @@
     .lightbox:active {
       display: none;
     }
+    .caption {
+      text-align: center;
+      max-width: 300px;
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #b0bec5;
+    }
+
   </style>
 </head>
 <body>
   <h1>My Certificates</h1>
   <div class="gallery">
     <img src="robot_dreams_cretificate.png" alt="Devops Solutions:CI/CD Training" onclick="openLightbox(this.src)" oncontextmenu="return false">
+    <p class="caption">Devops Solutions:CI/CD Training</p>
     <img src="IOS Mobile Application Development with Swift Certificate.png" alt="IOS Mobile Application Development with Swift" onclick="openLightbox(this.src)" oncontextmenu="return false">
-    <!-- Yeni sertifikaları bu şekilde ekleyebilirsin -->
+    <p class="caption">IOS Mobile Application Development with Swift</p>
+    
   </div>
 
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
